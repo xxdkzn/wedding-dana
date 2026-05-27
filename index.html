@@ -110,9 +110,9 @@
  
     .hero-date {
       font-family: var(--serif);
-      font-size: clamp(18px, 3vw, 26px);
+      font-size: clamp(26px, 4.5vw, 40px);
       font-weight: 300;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.2em;
       color: var(--muted);
       opacity: 0;
       animation: fadeUp 1s ease 0.9s forwards;
@@ -330,6 +330,29 @@
       line-height: 1.8;
       color: var(--muted);
       max-width: 520px;
+    }
+ 
+    .venue-tag {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+ 
+    .venue-tag-name {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+ 
+    .venue-tag-addr {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
     }
  
     /* ── VENUE ────────────────────────────────────── */
@@ -568,7 +591,6 @@
     </svg>
  
     <p class="hero-date">11 · 07 · 2026</p>
-    <p class="hero-note">Нальчик · Адыгейские традиции</p>
  
     <div class="scroll-hint">
       <span>Листать</span>
@@ -632,6 +654,10 @@
             и добрых пожеланий. Захватывающее шоу артистов — в том числе
             танец с кинжалами, символизирующий смелость и честь народа.
           </p>
+          <div class="venue-tag">
+            <span class="venue-tag-name">Ресторан «Панорама»</span>
+            <span class="venue-tag-addr">г. Нальчик, Городской парк</span>
+          </div>
         </div>
       </div>
  
@@ -671,6 +697,10 @@
             и напитки, танцы и выездная регистрация брака под звуки музыки
             и аплодисменты. Трансфер до ресторана будет организован.
           </p>
+          <div class="venue-tag">
+            <span class="venue-tag-name">White River Hall</span>
+            <span class="venue-tag-addr">г. Нальчик, ул. Битирова, 100</span>
+          </div>
         </div>
       </div>
  
